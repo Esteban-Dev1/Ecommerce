@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
                     </p>
                     <div className="flex items-center mb-6">
                         <span className="text-red-500 text-2xl mr-2">📍</span>
-                        <p className="text-gray-700">Av. Santuario 1323, San Juan de Lurigancho</p>
+                        <p className="text-gray-700">Av. Antigua Panamericana Sur KM35/2</p>
                     </div>
                 </div>
 
