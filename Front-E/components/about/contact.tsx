@@ -1,5 +1,8 @@
 import React from "react";
 import { FaWhatsapp, FaWarehouse, FaTruck } from 'react-icons/fa'; // Importa iconos
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { PiTiktokLogo } from "react-icons/pi";
 const Contact: React.FC = () => {
     return (
         <div className="bg-gray-100">
@@ -33,8 +36,25 @@ const Contact: React.FC = () => {
                             <p className="relative ml-2">904065007</p>
                         </a>
                     </div>
-                      {/* Agregar Redes como: Facebook, Instagram y Tiktok*/}
-                      
+                    {/* Agregar Redes como: Facebook, Instagram y Tiktok*/}
+                    <div className="mt-4">
+                        <a href="" className="flex">
+                            <FaFacebook className="text-2xl text-blue-500 ml-2" />
+                            <p className="relative ml-2">www.estilos-esmeralda.com</p>
+                        </a>
+                    </div>
+                    <div className="mt-4">
+                        <a href=""className="flex">
+                        <FaInstagram className="text-2xl text-pink-600 ml-2" />
+                        <p className="relative ml-2">www-Instagram.com</p>
+                    </a>
+                    </div> 
+                    <div className="mt-4">
+                        <a href=""className="flex">
+                        <PiTiktokLogo className="text-2xl text-black ml-2" />
+                        <p className="relative ml-2">www-tiktok.com</p>
+                        </a>
+                    </div>
                 </div>
 
                 {/* Columna de Formulario de Contacto */}
