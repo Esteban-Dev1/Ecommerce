@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaWhatsapp, FaWarehouse, FaTruck } from 'react-icons/fa'; // Importa iconos
 const Contact: React.FC = () => {
     return (
         <div className="bg-gray-100">
@@ -11,7 +11,6 @@ const Contact: React.FC = () => {
                     Contáctanos
                 </h2>
             </div>
-
             {/* Contenedor Principal para la Sección de Contacto */}
             <div className="max-w-6xl mx-auto mt-10 mb-10 bg-white shadow-lg rounded-lg p-8 flex gap-10">
                 {/* Columna de Información */}
@@ -21,15 +20,27 @@ const Contact: React.FC = () => {
                         Aquí encontrarás nuestros canales de atención para poder ayudarte.
                     </p>
                     <div className="flex items-center mb-6">
-                        <span className="text-red-500 text-2xl mr-2">📍</span>
-                        <p className="text-gray-700">Av. Antigua Panamericana Sur KM35/2</p>
+                        {/*Pendiente Redirecionar a google maps */}
+                        <a href="#" target="blank" className="flex">
+                            <FaWarehouse className="text-2xl text-orange-300 ml-2" />
+
+                            <p className="relative ml-2">Av. Antigua Panamericana Sur KM35/2</p>
+                        </a>
                     </div>
+                    <div className="">
+                        <a href="https://api.whatsapp.com/send?phone=51904065007" target="blank" className="flex">
+                            <FaWhatsapp className="text-2xl text-green-500 ml-2" />
+                            <p className="relative ml-2">904065007</p>
+                        </a>
+                    </div>
+                      {/* Agregar Redes como: Facebook, Instagram y Tiktok*/}
+                      
                 </div>
 
                 {/* Columna de Formulario de Contacto */}
                 <div className="w-1/2">
                     <p className="mb-4 text-gray-700">Si tienes alguna consulta déjanos tu mensaje y en breve te contestaremos.</p>
-                    
+
                     <form className="bg-gray-50 p-6 rounded-lg shadow-md">
                         <div className="mb-4">
                             <label className="block text-gray-600 mb-2">Nombre y apellidos</label>
